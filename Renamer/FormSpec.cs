@@ -10,7 +10,7 @@ namespace Renamer
     {
 
 
-        public static void ini(Form Form)
+        public static void Init(Form Form)
         {
             Form.StartPosition = FormStartPosition.CenterScreen;
             Form.FormBorderStyle = FormBorderStyle.FixedSingle;

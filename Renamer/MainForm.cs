@@ -18,7 +18,7 @@ namespace Renamer
         public Mainform()
         {
             InitializeComponent();
-            FormSpec.ini(this);
+            FormSpec.Init(this);
             this.ShowIcon = true;
         }
 
@@ -119,7 +119,7 @@ namespace Renamer
                             if (mfChecked == "False" || mfChecked == string.Empty)
                             {
                                 MsgFileFolder mff = new MsgFileFolder();
-                                FormSpec.ini(mff);
+                                FormSpec.Init(mff);
                                 mff.mf = this;
                                 mff.StartPosition = FormStartPosition.CenterParent;
                                 mff.ShowDialog();
@@ -368,7 +368,7 @@ namespace Renamer
             try
             {
                 Replace rp = new Replace();
-                FormSpec.ini(rp);
+                FormSpec.Init(rp);
                 rp.mf = this;
                 rp.StartPosition = FormStartPosition.CenterParent;
                 rp.ShowDialog();
@@ -380,7 +380,7 @@ namespace Renamer
             try
             {
                 FrontAdd fa = new FrontAdd();
-                FormSpec.ini(fa);
+                FormSpec.Init(fa);
                 fa.mf = this;
                 fa.StartPosition = FormStartPosition.CenterParent;
                 fa.ShowDialog();
@@ -392,7 +392,7 @@ namespace Renamer
             try
             {
                 BackAdd ba = new BackAdd();
-                FormSpec.ini(ba);
+                FormSpec.Init(ba);
                 ba.mf = this;
                 ba.StartPosition = FormStartPosition.CenterParent;
                 ba.ShowDialog();
@@ -404,7 +404,7 @@ namespace Renamer
             try
             {
                 PositionDel pd = new PositionDel();
-                FormSpec.ini(pd);
+                FormSpec.Init(pd);
                 pd.mf = this;
                 pd.StartPosition = FormStartPosition.CenterParent;
                 pd.ShowDialog();
@@ -417,7 +417,7 @@ namespace Renamer
             {
 
                 GroupDel gd = new GroupDel();
-                FormSpec.ini(gd);
+                FormSpec.Init(gd);
                 gd.mf = this;
                 gd.StartPosition = FormStartPosition.CenterParent;
                 gd.ShowDialog();
@@ -454,7 +454,7 @@ namespace Renamer
         private void btn_NummerComma_Click(object sender, EventArgs e)
         {
             NumberComma nc = new NumberComma();
-            FormSpec.ini(nc);
+            FormSpec.Init(nc);
             nc.mf = this;
             nc.StartPosition = FormStartPosition.CenterParent;
             nc.ShowDialog();
@@ -463,7 +463,7 @@ namespace Renamer
         private void btn_WriteNumber_Click(object sender, EventArgs e)
         {
             WriteNumber wn = new WriteNumber();
-            FormSpec.ini(wn);
+            FormSpec.Init(wn);
             wn.mf = this;
             wn.StartPosition = FormStartPosition.CenterParent;
             wn.ShowDialog();
@@ -478,7 +478,7 @@ namespace Renamer
             if (Listview1.SelectedItems.Count == 1)
             {
                 SelfName sn = new SelfName();
-                FormSpec.ini(sn);
+                FormSpec.Init(sn);
                 sn.mf = this;
                 sn.StartPosition = FormStartPosition.CenterParent;
                 sn.ShowDialog();
@@ -525,7 +525,7 @@ namespace Renamer
         private void btn_ExtChng_Click(object sender, EventArgs e)
         {
             ExtChng ec = new ExtChng();
-            FormSpec.ini(ec);
+            FormSpec.Init(ec);
             ec.mf = this;
             ec.StartPosition = FormStartPosition.CenterParent;
             ec.ShowDialog();
@@ -534,7 +534,7 @@ namespace Renamer
         private void btn_ExtAdd_Click(object sender, EventArgs e)
         {
             ExtAdd ea = new ExtAdd();
-            FormSpec.ini(ea);
+            FormSpec.Init(ea);
             ea.mf = this;
             ea.StartPosition = FormStartPosition.CenterParent;
             ea.ShowDialog();
