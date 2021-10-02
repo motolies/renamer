@@ -73,6 +73,14 @@ namespace Renamer
             {
                 string[] s = (string[])e.Data.GetData(DataFormats.FileDrop, false);
 
+                //이름순으로 정렬먼저 하자.
+                Array.Sort(s, StringComparer.OrdinalIgnoreCase);
+
+
+
+
+
+
                 // 데이터 중복검사
                 for (int y = 0; y < s.Length; y++)
                 {
